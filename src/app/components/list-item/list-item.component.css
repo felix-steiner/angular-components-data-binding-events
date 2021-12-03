@@ -1,0 +1,28 @@
+.list-item {
+  /* background-color: aqua; */
+  width: auto;
+  min-height: 40px;
+  margin: 12px;
+  /* border-left: 10px solid #e74c3c; */
+  border-left: 10px solid #f1c40f;
+  /* border-left: 10px solid #2ecc71; */
+  border-radius: 6px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item-title {
+  margin-left: 24px;
+}
+
+.list-item-action {
+  margin-right: 24px;
+  color: #2ecc71;
+}
+
+.list-item-action:hover {
+  cursor: pointer;
+  color: #27ae60;
+}
