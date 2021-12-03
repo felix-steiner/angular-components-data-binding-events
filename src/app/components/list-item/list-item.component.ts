@@ -8,7 +8,7 @@ import { Task } from 'src/app/models/task';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit {
-  @Input() task: Task;
+  @Input() task!: Task;
   @Output() doneInner = new EventEmitter<Task>();
   borderStyle = '';
 
