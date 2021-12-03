@@ -1,7 +1,5 @@
-<div class="list">
-  <app-list-item></app-list-item>
-  <app-list-item></app-list-item>
-  <app-list-item></app-list-item>
-  <app-list-item></app-list-item>
-  <app-list-item></app-list-item>
+<div class="list" [hidden]="tasks.length === 0">
+  <div *ngFor="let task of tasks">
+    <app-list-item [task]="task" (doneInner)="handleDoneInner($event)"></app-list-item>
+  </div>
 </div>

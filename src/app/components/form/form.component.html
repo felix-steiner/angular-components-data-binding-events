@@ -1,5 +1,11 @@
 <div class="form">
-  <app-input-field></app-input-field>
-  <app-input-select></app-input-select>
-  <app-input-button></app-input-button>
+  <label for="title-input">Titel:</label>
+  <input id="title-input" type="text" name="title" required [(ngModel)]="title" />
+  
+  <label for="priority-input">Priorität:</label>
+  <select id="priority-input" [(ngModel)]="selectedPriority" required>
+    <option *ngFor="let p of priorities" [ngValue]="p">{{p.name}}</option>
+  </select>
+
+  <button (click)="triggerAdd()" [disabled]="title === ''">Hinzufügen</button>
 </div>
